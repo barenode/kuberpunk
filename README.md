@@ -22,6 +22,11 @@ kube-system   storage-provisioner                1/1     Running   2          45
 
 > kubectl port-forward --namespace kube-system registry-8d2v7 5000:5000
 > docker run --rm -it --network=host alpine ash -c "apk add socat && socat TCP-LISTEN:5000,reuseaddr,fork TCP:host.docker.internal:5000"
+
+
+# on 80 port
+> kubectl port-forward --namespace kube-system registry-8d2v7 80:5000
+> docker run --rm -it --network=host alpine ash -c "apk add socat && socat TCP-LISTEN:80,reuseaddr,fork TCP:host.docker.internal:80"
 ---
 
 
