@@ -1,0 +1,7 @@
+{
+    "[java]": {
+        "editor.formatOnSave": false   
+    },
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "maven.view": "flat"
+}
